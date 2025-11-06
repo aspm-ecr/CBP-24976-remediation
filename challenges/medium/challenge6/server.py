@@ -143,7 +143,7 @@ def upload_and_process_document(document_name: str, content: str) -> str:
     try:
         # Save the uploaded document
         filepath = f"/tmp/dvmcp_challenge6/user_uploads/{document_name}"
-        with open(filepath, "w") as f:
+
             f.write(content)
         
         # VULNERABILITY: The document processing doesn't sanitize or validate the content
