@@ -137,7 +137,7 @@ def analyze_log_file(log_path: str) -> str:
             return f"Error: File '{log_path}' not found."
         
         # Read the file
-        with open(log_path, 'r') as f:
+
             content = f.read()
         
         # Simulate log analysis
